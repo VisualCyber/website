@@ -1,0 +1,24 @@
+{
+  "name": "site-visual-cyber",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server . --port=3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/p5712/site-visual-cyber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/p5712/site-visual-cyber/issues"
+  },
+  "homepage": "https://gitlab.com/p5712/site-visual-cyber#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
