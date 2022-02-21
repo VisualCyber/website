@@ -15,6 +15,9 @@
     <body>
         <!--==================== HEADER ====================-->
         <header class="header">
+            <div style="background-color: #EA293C; text-align: center; padding: 5px; color: #FFFFFF;">
+                Site em versão beta !!!
+            </div>
             <nav class="nav container">
                 <a href="/" class="nav__logo">
                     <img src="assets/img/logo-visual-cyber.svg">
@@ -54,13 +57,13 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                <div class="home__container container grid">
+                <div class="home__container container">
                     <p class="home__title">
                         Conectando
                         você a <b> um futuro promissor! </b>
                     </p>
                     <div class="home__img">
-                        <img src="assets/img/logo-large.svg" alt="logo">
+                        <img src="assets/img/logo-large.svg" data-tilt alt="logo">
                     </div>
                 </div>
             </section>
@@ -80,7 +83,7 @@
             <!--==================== BUSSINERS ====================-->
             <section class="bussiners section" id="bussiners">
                 <div class="bussiners__container container grid">
-                    <img src="assets/img/rocket.svg" alt="foguete">
+                    <img src="assets/img/rocket.svg" data-tilt class="img__foguete" alt="foguete">
                     <div class="bussiners__text">
                         <p> Elevamos o nível
                             de seu negócio ao 
@@ -98,17 +101,18 @@
                             PROGRAMAÇÃO
                         </p>
                         <h1 class="develop_apps__subtitle">
-                            Desenvolvimeto de Apps
+                            Desenvolvimeto de
+                            Apps
                         </h1>
                     </div>
-                    <img class="develop_apps__image" src="assets/img/cellphone-hand.svg">
+                    <img class="develop_apps__image" data-tilt src="assets/img/cellphone-hand.svg">
                 </div>
             </section>
 
             <!--==================== DESIGN ====================-->
             <section class="design section">
                 <div class="design__container container grid">
-                    <img class="design__image" src="assets/img/design.svg">
+                    <img class="design__image" data-tilt src="assets/img/design.svg">
                     <div class="design__text">
                         <p class="design__title">
                             DESIGN
@@ -133,7 +137,7 @@
                             Redes Sociais
                         </h1>
                     </div>
-                    <img class="social_media__image" src="assets/img/social-media.svg">
+                    <img class="social_media__image" data-tilt src="assets/img/social-media.svg">
                 </div>
             </section>
 
@@ -152,7 +156,7 @@
             <!--==================== WE_ARE_CYBERS ====================-->
             <section class="we_are_cybers section">
                 <div class="we_are_cybers__container container grid">
-                    <div class="meeting__text">
+                    <div class="we_are__text">
                         <h1 class="we_are__title">
                             Somos Cyber, jovens, curiosos e sintonizados 
                             com o que há de mais novo.
@@ -161,7 +165,7 @@
                             Nós ajudamos nossos clientes a encontrar meios e modos mais ágeis de alcançar os melhores resultados digitalmente e no ecommerce. Temos um time de 05+ talentos que são especialistas em exceder expectativas.
                         </p>
                     </div>
-                    <img src="assets/img/logo-decor-larger.svg" alt="visual cyber">
+                    <img src="assets/img/logo-decor-larger.svg" data-tilt class="img__we_are_cyber" alt="visual cyber">
                 </div>
                 </div>
             </section>
@@ -217,7 +221,7 @@
                     <div class="footer__contact">
                         <b> Fale conosco: </b>
                         <ul>
-                            <li> +55 (92) 99374-7105 </li>
+                            <li> +55 (92) 98491-2668 </li>
                             <li> visualcyberoficial@gmail.com </li>
                         </ul>
                     </div>
@@ -235,6 +239,15 @@
             </div>
         </footer>
         <!--==================== MAIN JS ====================-->
-        <!-- <script src="assets/js/main.js"></script> -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe/dist/gumshoe.polyfills.min.js"></script>
+        <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $('.js-tilt').tilt({
+                scale: 1.2
+            })
+        </script>
     </body>
 </html>
